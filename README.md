@@ -6,16 +6,16 @@ This is the example code to go along with my [blog post on NodeJS and Feedparser
 Before you start, make sure you have NodeJS 0.10.x installed.
 At the terminal, run:
 
-{% highlight bash %}
+```bash
 $ cd FeedparserSample/
 $ npm install
-{% endhighlight %}
+```
 
 To run:
 
-{% highlight bash %}
+```bash
 $ node app.js
-{% endhighlight %}
+```bash
 
 ## Usage example
 
@@ -24,7 +24,7 @@ to **http://localhost:3000/feed/http%3A%2F%2Fleoville.tv%2Fpodcasts%2Fsn.xml** (
 
 You should see a similar result:
 
-{% highlight javascript %}
+```javascript
 {
     "feedName": "Security Now (MP3)",
     "website": "http://twit.tv/sn",
@@ -82,4 +82,4 @@ You should see a similar result:
         }
     ]
 }
-{% endhighlight %}
+```
