@@ -15,7 +15,7 @@ To run:
 
 ```bash
 $ node app.js
-```bash
+```
 
 ## Usage example
 
