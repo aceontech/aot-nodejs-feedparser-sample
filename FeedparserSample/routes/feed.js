@@ -1,5 +1,5 @@
 var FeedParser = require('feedparser');
-var http = require('http');
+var https = require('https');
 
 exports.parse = function(req, res){
     // Retain referene to original response, so we can answer the user at some point
@@ -15,7 +15,7 @@ exports.parse = function(req, res){
     var episodes = [];
 
     // Get the feed by URL
-    http.get(feedUrl, function(res) {
+    https.get(feedUrl, function(res) {
 
         // Give the 'res' stream to FeedParser for processing
         res.pipe(new FeedParser({}))
